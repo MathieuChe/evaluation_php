@@ -128,8 +128,6 @@ class UserController
 
             $_SESSION['security']['user'] = (new UserManager())->findById($_SESSION['security']['user']->getId());
 
-            dd($user);
-
             header('Location: /profil?success');
             exit;
         }

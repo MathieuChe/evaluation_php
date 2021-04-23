@@ -75,7 +75,7 @@ use Simplex\Service\Hydrator;
                             <div class="card-body">
                                 <h2 class="card-title"><?= $product['name'] ?></h2>
                                 <h3 class="card-text"><?= $product['price'] . " €" ?></h3>
-                                <a href="/product/<?= $product['id'] ?>" class="btn btn-primary">Voir la fiche</a>
+                                <a href="#" class="btn btn-primary">Voir la fiche</a>
                                 <a href="#" class="btn btn-primary">Buy me</a>
                                 <h5><span class="label label-danger">Food</span></h5><br>
                                 <?php if (isset($_SESSION['security']) && $_SESSION['security']['isLoggedIn']) : ?> <?php if ($_SESSION['security']['user']->getId() === $product["user_id"]) : ?> <a href="/product/edit/<?= $product['id'] ?>" class="btn btn-info"><span class="bi-pencil"></span></a>
